@@ -1,0 +1,259 @@
+:root{
+    --projects-titles: rgb(129, 33, 159);
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgb(1, 1, 37);
+    top: 0;
+    height: 4.5rem;
+    font-size: 1.4rem;
+    text-align: right;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: azure;
+    padding-right: 2rem;
+}
+
+.container{
+    padding-top: 3rem;
+}
+
+#welcome-section{
+    background-color: rgb(244, 242, 212);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: rgb(225, 225, 234);
+    text-shadow: 5px 5px 10px rgb(4, 4, 76);
+
+}
+
+#welcome p{
+    font-size: 1.8rem;
+    font-style: italic;
+    color: rgb(4, 4, 76);
+    
+}
+
+#projects{
+    padding-top: 5rem;
+    background-color: rgb(1, 1, 37);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    font-size: 2.5rem;
+    color: rgb(225, 225, 234);
+    border-bottom: 1px solid rgb(225, 225, 234);
+    text-align: center;
+}
+
+img{
+    width: 96%;
+    padding-left: 4.2vw;
+    margin-bottom: 0;
+    border-radius: 2px;
+}
+
+.project-tile p{
+    background-color: var(--projects-titles);
+    margin-top: 0;
+    margin-left: 4.13vw;
+    margin-right: 3.9vw;
+    height: 3rem;
+    text-decoration: none;
+    color: rgb(225, 225, 234);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+span{
+    color: var(--projects-titles);
+    
+}
+
+a:hover span{
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+#profile-link{
+    text-decoration: none;
+    color: rgb(225, 225, 234);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--projects-titles);
+    margin: 50px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    max-width: 10rem;
+    border-radius: 3px;
+}
+
+#profile-link:hover{
+    background-color: rgb(220, 149, 27);
+    box-shadow: 3px 3px 15px whitesmoke;
+    transition: 0.6s;
+}
+
+
+#contact{
+    height: 80vh;
+    background-color: whitesmoke;
+}
+
+#div1{
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+}
+#div1 p{
+    margin-top: -5vh;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgb(4, 4, 76);
+}
+
+#div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+
+#div2 a{
+    padding: 0 15px;
+    color: var(--projects-titles);
+    text-shadow: 1px 2px 2px black;
+}
+
+footer{
+    display: flex;
+    height: 15vh;
+    border-top: 5px solid black;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+    background-color: whitesmoke;
+}
+
+footer i{
+    padding-right: 5px;
+}
+
+footer a{
+    color: black;
+}
+
+@media (min-width: 800px){
+    header{
+        background-color: rgb(135, 0, 0);
+    }
+    
+    #navbar a{
+        color: azure;
+    }
+    
+    #welcome-section{
+        background-color: rgb(0, 0, 0);
+    }
+    
+    h1{
+        color: rgb(0, 0, 0);
+        text-shadow: 5px 5px 10px rgb(255, 255, 255);
+    
+    }
+    
+    #welcome p{
+        color: rgb(255, 255, 255);
+    }
+
+
+    #projects{
+        background-color:rgb(12, 5, 66)     
+    }
+    
+    h2{
+        color: rgb(225, 225, 234);
+        border-bottom: 1px solid rgb(225, 225, 234);
+        text-align: center;
+    }
+    
+    
+    .project-tile p{
+        background-color: var(--projects-titles);
+        color: whitesmoke;
+    }
+    
+    span{
+        color: var(--projects-titles);
+        
+    }
+    
+    a:hover span{
+        color: rgb(255, 255, 255);
+        transition: 0.8s;
+    }
+    
+    #profile-link{
+        color: whitesmoke;
+    }
+      
+    
+    #profile-link:hover{
+        background-color: rgb(50, 0, 175);
+        box-shadow: 3px 3px 15px rgb(0, 0, 0);
+        transition: 0.6s;
+    }
+    
+    
+    #contact{
+        background-color: whitesmoke;
+    }
+
+}
